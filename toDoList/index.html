@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="card-container">
+            <h4 class="card-title">Chore List</h4>
+            <!-- Add chore -->
+            <div class="add-container">
+                <form id="chore-form">
+                    <div class="input-container">
+                        <input type="text" placeholder="New Chore" name="chore" id="chore">
+                    </div>
+                    <input type="submit" value="Add chore" class="btn">
+                </form>
+            </div>
+
+            <!-- Dividing line -->
+            <div class="line"></div>
+
+            <!-- Chores list -->
+            <div class="chore-list">
+                <form id="chore-form">
+                    <h2>Chores</h2>
+                    <div class="input-container">
+                        <input type="text" placeholder="Filter Chores" name="chores" id="filter">
+                    </div>
+                    <ul class="collection"></ul>
+                    <input type="submit" value="Delete Chores" class="clear-chores btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
