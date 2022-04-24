@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Guess the Number</title>
+</head>
+
+<body>
+    <div class="w-full p-8 flex justify-center">
+        <div class="rounded bg-blue-500 w-80 p-2">
+            <div class="flex justify-start py-1">
+                <h2 class="text-md text-white">Guess the Number</h2>
+            </div>
+            <div class="text-sm mt-2" id="game">
+                <div class="bg-white p-2 rounded">
+                    <p>Game Settings</p>
+                    <div class="rounded flex py-2">
+                        <div class="w-1/3">
+                            <p class="px-2">Min</p>
+                            <input
+                            class="shadow border rounded w-full py-2 px-2 my-1 text-gray-700 focus:outline-none focus:shadow-outline"
+                            id="min-input" type="text" placeholder="Number">
+                        </div>
+    
+                        <div class="w-1/3">
+                            <p class="px-2">Max</p>
+                            <input
+                            class="shadow border rounded w-full py-2 px-2 my-1 text-gray-700 focus:outline-none focus:shadow-outline"
+                            id="max-input" type="text" placeholder="Number">
+                        </div>
+    
+                        <div class="w-1/3">
+                            <p class="px-2">Guesses</p>
+                            <input
+                            class="shadow border rounded w-full py-2 px-2 my-1 text-gray-700 focus:outline-none focus:shadow-outline"
+                            id="guessleft-input" type="text" placeholder="Number">
+                        </div>
+                    </div>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button" id="settings-btn">
+                        Submit
+                    </button>
+                </div>
+
+
+                <div class="bg-white p-2 rounded mt-2 border-b border-grey cursor-pointed" id="guessGame">
+                    <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
+                    <input
+                        class="shadow border rounded w-full py-2 px-3 my-3 text-gray-700 focus:outline-none focus:shadow-outline"
+                        id="guess-input" type="text" placeholder="Number">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button" id="guess-btn">
+                        Guess
+                    </button>
+                    <p class="message py-2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
